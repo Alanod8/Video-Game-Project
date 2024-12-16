@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'games/css/style.css' %}">
+</head>
+<body>
+<div class = 'main-container'>
+<h1>Welcome to the Video Games Application</h1>
+<img src="{% static 'games/images/home_img.jpg' %}" alt="Game logo" width="300" height="auto">
+<p><a href="{% url 'list_games' %}">View list of games</a></p>
+</div>
+
+</body>
+</html>
